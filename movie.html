@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>movie-chart</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/home-style.css">
+</head>
+<body>
+	
+	<div class="container">
+		<header class="home-header">
+      <div class="menu">
+        <input type="checkbox" id="menu-btn">
+        <label for="menu-btn"></label>
+        <div class="sidebar">
+          <div class="side-content">
+            <article class="sidebar-user">
+              <span class="user-thum"></span>
+              <p><strong>AAA 님</strong> 환영합니다.</p>
+              <ul>
+                <li>
+                  <a href="#a" class="point">
+                    <strong>1,1141</strong>
+                    <span>포인트</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#a" class="coupon">
+                    <strong>1</strong>
+                    <span>쿠폰</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#a" class="notice"">
+                    <strong>10</strong>
+                    <span>알림함</span>
+                  </a>
+                </li>
+              </ul>
+            </article>
+            <div class="sidebar-book">
+              <ul>
+                <li><a href="#a">영화별 예매</a></li>
+                <li><a href="#a">영화관별 예매</a></li>
+              </ul>
+            </div>
+            <article class="sidebar-list">
+              <ul class="category">
+                <li><a href="#a">영화</a></li>
+                <li><a href="#a">영화관</a></li>
+                <li><a href="#a">스페셜관</a></li>
+                <li><a href="#a">이벤트</a></li>
+                <li><a href="#a">스토어</a></li>
+                <li><a href="#a">포토카드</a></li>
+              </ul>
+              <ul class="category2">
+                <li><a href="#a">극장안내</a></li>
+                <li><a href="#a">무비포스트</a></li>
+                <li><a href="#a">제휴/할인안내</a></li>
+                <li><a href="#a">멤버십안내</a></li>
+              </ul>
+              <ul class="category3">
+                <li><a href="#a">공지사항</a></li>
+                <li><a href="#a">고객센터</a></li>
+                <li><a href="#a">1:1문의</a></li>
+              </ul>
+            </article>
+            <article class="sidebar-banner">
+              <img src="images/event-04.png" alt="">
+            </article>
+            <a href="#a" class="logout">로그아웃</a>
+          </div>
+        </div>
+      </div>
+			<a  class="back-btn" href="javascript:history.back()"><span class="hide">뒤로가기</span></a>
+      <h2>Movie Chart</h2>
+			<div class="ticket"><a href="myticket.html"><span class="hide">예매내역</span></a></div>
+    </header>
+<!-- //header -->
+    <main>
+    	<section class="movie-chart">
+    		<input type="radio" name="movie-chart" id="current" checked>
+    		<input type="radio" name="movie-chart" id="next">
+    		<div class="chart-btn clear">
+    			<label for="current">무비차트</label>
+    			<label for="next">상영예정작</label>
+    		</div>
+    		<div class="chart-box current">
+    			<div class="order clear">
+    				<input type="checkbox" id="chk01"><label for="chk01">현재 상영작만 보기</label>
+    				<select name="order" id="">
+    					<option value="" selected>예매율순</option>
+    					<option value="">개봉일순</option>
+    					<option value="">평점순</option>
+    				</select>
+    			</div>
+    			<div class="current-chart">
+    				<ul class="chart-list">
+    					<li class="clear" onclick="location.href='movie-info.html'">
+    						<div>
+									<img src="images/thum-01.png" alt="터미네이터:다크페이트">
+								</div>
+								<div class="chart-info">
+									<h3>터미네이터:다크페이트<span class="chart-grade-old old15">15</span></h3>
+									<p>평점 7.9<br>예매율 30.3%<br>개봉일 2019.10.30</p>
+									<a class="book-btn" href="#a">예매하기</a>
+								</div>
+    					</li>
+    					<li class="clear" onclick="location.href='movie-info.html'">
+    						<div>
+									<img src="images/thum-02.png" alt="82년생 김지영">
+								</div>
+								<div class="chart-info">
+									<h3>82년생 김지영<span class="chart-grade-old old12">12</span></h3>
+									<p>평점 7.9<br>예매율 20.9%<br>개봉일 2019.10.30</p>
+									<a class="book-btn" href="#a">예매하기</a>
+								</div>
+    					</li>
+    					<li class="clear" onclick="location.href='movie-info.html'">
+    						<div>
+									<img src="images/thum-03.png" alt="날씨의 아이">
+								</div>
+								<div class="chart-info">
+									<h3>날씨의 아이<span class="chart-grade-old old15">15</span></h3>
+									<p>평점 7.9<br>예매율 5.9%<br>개봉일 2019.10.30</p>
+									<a class="book-btn" href="#a">예매하기</a>
+								</div>
+    					</li>
+    					<li class="clear" onclick="location.href='movie-info.html'">
+    						<div>
+									<img src="images/thum-04.png" alt="말레피센트 2">
+								</div>
+								<div class="chart-info">
+									<h3>말레피센트 2<span class="chart-grade-old old12">12</span></h3>
+									<p>평점 7.9<br>예매율 1.7%<br>개봉일 2019.10.30</p>
+									<a class="book-btn" href="#a">예매하기</a>
+								</div>
+    					</li>
+    					<li class="clear" onclick="location.href='movie-info.html'">
+    						<div>
+									<img src="images/thum-05.png" alt="조커">
+								</div>
+								<div class="chart-info">
+									<h3>조커<span class="chart-grade-old old15">15</span></h3>
+									<p>평점 7.9<br>예매율 1.5%<br>개봉일 2019.10.30</p>
+									<a class="book-btn" href="#a">예매하기</a>
+								</div>
+    					</li>
+    					<li class="clear" onclick="location.href='movie-info.html'">
+    						<div>
+									<img src="images/thum-06.png" alt="가장 보통의 연애">
+								</div>
+								<div class="chart-info">
+									<h3>가장 보통의 연애<span class="chart-grade-old old15">15</span></h3>
+									<p>평점 7.9<br>예매율 1.4%<br>개봉일 2019.10.30</p>
+									<a class="book-btn" href="#a">예매하기</a>
+								</div>
+    					</li>
+    					<li class="clear" onclick="location.href='movie-info.html'">
+    						<div>
+									<img src="images/thum-07.png" alt="프렌드 존">
+								</div>
+								<div class="chart-info">
+									<h3>프렌드 존<span class="chart-grade-old old12">12</span></h3>
+									<p>평점 7.9<br>예매율 0.3%<br>개봉일 2019.10.30</p>
+									<a class="book-btn" href="#a">예매하기</a>
+								</div>
+    					</li>
+    				</ul>
+    			</div>
+    		</div>
+    		<!-- //current-chart -->
+    		<div class="chart-box next">
+    			<div class="order clear">
+    				<input type="checkbox" id="chk01"><label for="chk01">현재 상영작만 보기</label>
+    				<select name="order" id="">
+    					<option value="" selected>예매율순</option>
+    					<option value="">개봉순</option>
+    					<option value="">평점순</option>
+    				</select>
+    			</div>
+    			<div class="current-chart">
+    				<ul class="chart-list">
+    					<li class="clear">
+    						<div>
+									<img src="images/thum-next-01.png" alt="신의 한 수- 귀수편">
+								</div>
+								<div class="chart-info">
+									<h3>신의 한 수- 귀수편<span class="chart-grade-old old15">15</span></h3>
+									<p>평점 7.9<br>예매율 20.0%<br>개봉일 2019.11.07</p>
+									<a class="book-btn" href="movie-info.html">예매하기</a>
+								</div>
+    					</li>
+    					<li class="clear">
+    						<div>
+									<img src="images/thum-next-02.png" alt="아담스 패밀리">
+								</div>
+								<div class="chart-info">
+									<h3>아담스 패밀리<span class="chart-grade-old old15">15</span></h3>
+									<p>평점 7.9<br>예매율 2.4%<br>개봉일 2019.11.07</p>
+									<a class="book-btn" href="movie-info.html">예매하기</a>
+								</div>
+    					</li>
+    					<li class="clear">
+    						<div>
+									<img src="images/thum-next-03.png" alt="닥터 슬립">
+								</div>
+								<div class="chart-info">
+									<h3>닥터 슬립<span class="chart-grade-old old15">15</span></h3>
+									<p>평점 7.9<br>예매율 1.5%<br>개봉일 2019.11.07</p>
+									<a class="book-btn" href="movie-info.html">예매하기</a>
+								</div>
+    					</li>
+    					<li class="clear">
+    						<div>
+									<img src="images/thum-next-04.png" alt="모리스">
+								</div>
+								<div class="chart-info">
+									<h3>모리스<span class="chart-grade-old old15">15</span></h3>
+									<p>평점 7.9<br>예매율 1.2%<br>개봉일 2019.11.07</p>
+									<a class="book-btn" href="movie-info.html">예매하기</a>
+								</div>
+    					</li>
+    					<li class="clear">
+    						<div>
+									<img src="images/thum-next-05.png" alt="장고-분노의 추적자">
+								</div>
+								<div class="chart-info">
+									<h3>장고-분노의 추적자<span class="chart-grade-old old15">15</span></h3>
+									<p>평점 7.9<br>예매율 1.1%<br>개봉일 2019.11.07</p>
+									<a class="book-btn" href="movie-info.html">예매하기</a>
+								</div>
+    					</li>
+    					<li class="clear">
+    						<div>
+									<img src="images/thum-next-06.png" alt="왓 데이 해드">
+								</div>
+								<div class="chart-info">
+									<h3>왓 데이 해드<span class="chart-grade-old old15">15</span></h3>
+									<p>평점 7.9<br>예매율 0.6%<br>개봉일 2019.11.07</p>
+									<a class="book-btn" href="movie-info.html">예매하기</a>
+								</div>
+    					</li>
+    				</ul>
+    			</div>
+    		</div>
+    		<!-- //next-chart -->
+    	</section>
+<!-- //cection-movie-chart -->    	
+    </main>
+    <div id="footer">
+      <!-- include footer -->
+		</div>
+	</div>
+	
+	<script>
+    $('#footer').load('footer.html');
+  </script>
+	
+</body>
+</html>
