@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>my ticket</title>
-	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-	<!-- UIkit CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>my ticket</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <!-- UIkit CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
   <!-- UIkit JS -->
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/home-style.css">
 </head>
+
 <body>
-	
-	<div class="container">
-		<header class="home-header">
+
+  <div class="container">
+    <header class="home-header">
       <div class="menu">
         <input type="checkbox" id="menu-btn">
         <label for="menu-btn"></label>
@@ -45,7 +47,7 @@
                 </li>
               </ul>
             </article>
-            <div class="sidebar-book">
+            <div class=" sidebar-book">
               <ul>
                 <li><a href="#a">영화별 예매</a></li>
                 <li><a href="#a">영화관별 예매</a></li>
@@ -79,40 +81,41 @@
           </div>
         </div>
       </div>
-			<a  class="back-btn" href="javascript:history.back()"><span class="hide">뒤로가기</span></a>
+      <a class="back-btn" href="javascript:history.back()"><span class="hide">뒤로가기</span></a>
       <h2>My Ticket</h2>
-			<div class="ticket"><a href="myticket.html"><span class="hide">예매내역</span></a></div>
-    </header>
-<!-- //header -->
-    <main>
-    	<section class="my-ticket">
-        <div class="ticket-content">
-          <h3>터미네이터:다크 페이트<span class="grade-old old15">15</span></h3>
-          <article class="movie-thum"></article>
-          <article class="ticket-info">
-            <ul class="seat">
-              <li><span>상영관</span><strong>09</strong></li>
-              <li><span>열</span><strong>H</strong></li>
-              <li><span>좌석</span><strong>16</strong></li>
-            </ul>
-            <ul class="date">
-              <li><span>날짜</span><strong>2019.11.11</strong></li>
-              <li><span>시간</span><strong>AM 11.50</strong></li>
-              <li><span>가격</span><strong>11,000원</strong></li>
-            </ul>
-            <sapn class="barcode"></sapn>
-          </article>
-        </div>
-      </section>
-    </main>
-    <div id="footer">
-      <!-- include footer -->
-		</div>
-	</div>
-	
-	<script>
+    <div class="ticket"><a href="myticket.html"><span class="hide">예매내역</span></a></div>
+  </header>
+  <!-- //header -->
+  <main>
+    <section class="my-ticket">
+      <div class="ticket-content">
+        <h3>터미네이터:다크 페이트<span class="grade-old old15">15</span></h3>
+        <article class="movie-thum"></article>
+        <article class="ticket-info">
+          <ul class="seat">
+            <li><span>상영관</span><strong>09</strong></li>
+            <li><span>열</span><strong>H</strong></li>
+            <li><span>좌석</span><strong>16</strong></li>
+          </ul>
+          <ul class="date">
+            <li><span>날짜</span><strong>2019.11.11</strong></li>
+            <li><span>시간</span><strong>AM 11.50</strong></li>
+            <li><span>가격</span><strong>11,000원</strong></li>
+          </ul>
+          <sapn class="barcode"></sapn>
+        </article>
+      </div>
+    </section>
+  </main>
+  <div id="footer">
+  <!-- include footer -->
+  </div>
+  </div>
+
+  <script>
     $('#footer').load('footer.html');
   </script>
-	
+
 </body>
+
 </html>
